@@ -3,6 +3,7 @@
 Template Name: Plantilla con Nav
 */
  ?>
+ <?php get_header("platillapage"); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,3 +21,11 @@ Template Name: Plantilla con Nav
 	<?php include("menu-extra.php") ?>
 </body>
 </html>
+
+Index.php
+Page.php - page-xx.php - plantilla-de-pages-con-sidebar.php: Todos los parámetros de la función bloginfo().
+single.php
+
+header.php (get_header) 
+header-plantillapage.php 
+footer.php
