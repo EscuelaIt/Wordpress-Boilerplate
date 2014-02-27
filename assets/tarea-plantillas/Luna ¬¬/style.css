@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* CSS Document */
+h1 {
+	color:#FC0;
+}
+.especial {
+	background: grey;
+}
+.image {
+	max-width: 400px;
+}
+.villanos {
+	background: black;
+}
+nav{
+	position: fixed;
+	border: 1px solid grey;
+}
+
+nav li {
+	width: 100%;
+	border-bottom: 1px solid yellow;
+}
+
+header {
+	width: 100%;
+	background-color: yellow;
+}
+
+section {
+	
+	float: left;
+	width: 68%;
+	height: 600px;
+	background-color: #green;
+}
+aside {
+	float: left;
+	width: 20%;
+	background-color: #yellow;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	background-color: yellow;
+}

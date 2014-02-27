@@ -1,0 +1,51 @@
+﻿.princial {
+width:1200px;
+background-color:red;
+}
+.texto {
+float:left;
+width:500px;
+}
+.imagen {
+float:right;
+}
+
+
+
+p {
+padding-left:15px;
+ color:#555;
+ background-color:#eee;
+ border-bottom-color:#000;
+ padding-right: 33px;
+ 
+}
+h1 {
+size:15;
+color:#000;
+}
+h2 {
+size:8;
+color:#222;
+}
+
+a:link {
+ color:#555;
+ text-decoration:none;
+ }
+ 
+ a:hover {
+
+ color:#fff;
+ background-color:#444;
+ }
+ 
+ a:visited {
+ color:#555;
+ text-decoration:none;
+ }
+ 
+ img{
+    width:50%;
+    height: auto;
+}
