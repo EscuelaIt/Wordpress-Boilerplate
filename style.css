@@ -1,38 +1,26 @@
-img {
-	max-width: 100%;
+h1
+{
+	color: red;
 }
-h1 {
-	color:red;
+.especial
+{
+	background: aqua;
+	color:gray;
 }
-
-.image {
-	max-width: 400px;
-}
-
-strong {
-	background-color: olive;
-	color: white;
-	display: block;
-	padding: .5em 1em;
-}
-
-.especial {
-	background-color: grey;
-}
-
-.villanos {
-	background-color: black;
-	color: white;
-}
-
-nav {
+nav
+{
 	position: fixed;
 	width: 30%;
-	background-color: #fefefe;
-	border: 1px solid grey;
+	background: #fefefe;
+	border:1px solid gray;
 }
-
-nav li {
+nav li 
+{
 	width: 100%;
 	border-bottom: 1px solid black;
+}
+.derecha
+{
+	background: red;
+	color: yellow;
 }
