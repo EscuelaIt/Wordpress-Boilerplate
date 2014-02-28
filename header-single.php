@@ -1,3 +1,7 @@
+ <?php 
+ 	// Esta es la plantilla que carga con el single.php
+  ?>
+
 <!doctype html>
 <html lang="en">
 <head>
