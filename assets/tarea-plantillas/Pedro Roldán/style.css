@@ -1,0 +1,50 @@
+/*
+Theme Name: Boilerplate EIt
+Theme URI: https://github.com/EscuelaIt/Wordpress-Boilerplate
+Description: Un bonito tema para WordPress.
+Author: Curso diseño Wordpress
+Author URI: https://github.com/EscuelaIt/Wordpress-Boilerplate
+Version: 0.1
+*/
+
+
+img {
+	max-width: 100%;
+}
+h1 {
+	color:red;
+}
+
+strong {
+	color: #ff8080;
+	padding: .5em .5em;
+}
+
+header {
+	background-color: #ffc9c9;
+	color: #ff8080;
+}
+
+section {
+	width: 50%;
+	background-color: #f0f0d8;
+}
+
+footer {
+	background-color: #ff8080;
+	color: #ffffff;
+	padding: 1em;
+}
+
+.image {
+	max-width: 400px;
+}
+
+.especial {
+	background-color: grey;
+}
+
+.villanos {
+	background-color: black;
+	color: white;
+}

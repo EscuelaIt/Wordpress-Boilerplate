@@ -1,0 +1,30 @@
+/* 
+    Document   : style
+    Created on : Feb 25, 2014, 10:49:52 PM
+    Author     : gabrieladelgado
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body {
+	font-family: Georgia, Times, Serif;
+	margin:2em;
+}
+.especial {
+	background: #CCCCCC;
+	padding: 5em;
+}
+.colDer {
+    width: 30%;
+    float: right;
+    margin-left: 5%;
+}
+dd {
+    margin-bottom: 1em;
+}
+dt {
+    font-weight: bold;
+}

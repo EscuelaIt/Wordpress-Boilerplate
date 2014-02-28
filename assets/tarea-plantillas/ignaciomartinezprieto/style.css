@@ -1,0 +1,34 @@
+ h1{
+ 	color: #3fcb0e;;
+ }
+img{
+	max-width: 100%;
+
+}
+.image{
+	max-width: 100%;
+}
+
+.contenedor{
+	width: 900px;
+	height: 800px;
+}
+.pie{
+	background-color: #3fcb0e;
+	max-width: 57%;
+	height: 77 px;
+	color:#fff;
+	padding: 0.5 em
+}
+
+nav {
+	position: fixed;
+	width: 80%;
+	background-color:#3fcb0e;
+	
+}
+
+nav li {
+	width: 100%;
+	border-bottom: 1px solid black;
+}
