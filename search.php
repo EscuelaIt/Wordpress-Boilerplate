@@ -1,0 +1,1 @@
+<h2>Hola estoy cargando la búsqueda!</h2>

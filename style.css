@@ -1,3 +1,15 @@
+/*
+Theme Name: Worpress-Boilerplate
+Author: Estudiantes Curso WP EscuelaIT
+Author URI: https://github.com/EscuelaIt/Wordpress-Boilerplate
+Description: Es un tema didáctico para el curso de WP de EIT
+Version: 0.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+
+*/
+
 img {
 	max-width: 100%;
 }
@@ -8,14 +20,6 @@ h1 {
 .image {
 	max-width: 400px;
 }
-
-strong {
-	background-color: olive;
-	color: white;
-	display: block;
-	padding: .5em 1em;
-}
-
 .especial {
 	background-color: grey;
 }
@@ -35,4 +39,22 @@ nav {
 nav li {
 	width: 100%;
 	border-bottom: 1px solid black;
+}
+
+aside{
+	float: right;
+	width: 14%;
+}
+
+article{
+	border: 1px solid #DDD;
+	display: inline-block;
+	width: 50%;
+	min-height: 100px;
+	min-height: 100px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
 }
