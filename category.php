@@ -1,19 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title><?php bloginfo("description"); ?></title>
-	<link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
-</head>
-<body>
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<!-- post -->
-		<p><?php the_title(); ?></p>
-		<?php endwhile; ?>
-		<!-- post navigation -->
-		<?php else: ?>
-		<!-- no posts found -->
-		<?php endif; ?>
+<?php get_header(); ?>
 
-</body>
-</html>
+		<h1><?php the_category(" "); ?></h1>
+
+		<?php if ( have_posts() ) {
+
+			while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part("loop") ?>
+
+			<?php endwhile; ?>
+
+			<!-- post navigation -->
+
+		<?php }else{ ?>
+			<p>NO hay posts</p>
+			<!-- no posts found -->
+		<?php } ?>
+
+<?php get_footer(); ?>
