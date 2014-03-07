@@ -1,7 +1,11 @@
 <?php get_header("single"); ?>
 
 	
-<?php get_template_part("the_loop_single"); ?>
+<main class="single">
+		
+		<!-- Mete tu contenido -->
+
+</main>
 
 
 <?php get_footer(); ?>
