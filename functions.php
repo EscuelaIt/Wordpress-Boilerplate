@@ -79,4 +79,13 @@ return $contactmethods;
 add_filter('user_contactmethods','new_contactmethods',10,1);
 
 
+
+
+
+//
+// Desactivamos el editor del administrador de WP.
+// Uncomment last line
+
+// define('DISALLOW_FILE_EDIT', true);
+
  ?>

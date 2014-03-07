@@ -1,21 +1,24 @@
 <?php get_header("single"); ?>
 
 	
-<main class="single">
+<main>
 		
 	<?php the_post(); ?>
  
         <article>
+ 			<header>
  			<!-- Aqui saco el titulo del post -->
             <h1><?php the_title(); ?></h1>
 			<!-- Aqui saco el autor y la fecha de publicacion del post -->
                 <small>
                     Por <?php the_author(', '); ?> el <?php the_time('F jS, Y'); ?> en <?php the_category(', ') ?> | <?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
                 </small>
+         	</header>       
  			<!-- Aqui el contenido del post -->
-            <p>
+			<div class="single-content">
                 <?php the_content(); ?>
-            </p>
+            </div>
+
  
         </article>
 
