@@ -1,6 +1,13 @@
+<!-- Este es mi Single. Incluyo 3 archivos que juntos renderizan las entradas -->
+    <!-- Obtenemos el header -->
 <?php get_header("single"); ?>
 
-	
+<body>
+
+<header>
+    <?php get_template_part("nav"); ?>
+</header>
+
 <main>
 		
 	<?php the_post(); ?>
@@ -25,4 +32,4 @@
 </main>
 
 
-<?php get_footer(); ?>
+<?php get_footer("single"); ?>

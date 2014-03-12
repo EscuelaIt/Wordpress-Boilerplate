@@ -1,5 +1,6 @@
  <?php 
  	// Esta es la plantilla que carga con el single.php
+ 	//Se usará cuando se muestren entradas individuales.
   ?>
 
 <!doctype html>
@@ -10,6 +11,3 @@
 	<link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
 	<?php wp_head(); ?>
 </head>
-<body class="single">
-
-<?php get_template_part("nav"); ?>

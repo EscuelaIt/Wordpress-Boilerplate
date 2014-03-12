@@ -1,5 +1,6 @@
+<!-- Este footer es el que se renderiza en las páginas -->
+<footer class="page">
 
-<footer>
 <?php get_template_part("nav-footer"); ?>
 
 </footer>
