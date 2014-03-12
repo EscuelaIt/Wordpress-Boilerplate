@@ -88,4 +88,56 @@ add_filter('user_contactmethods','new_contactmethods',10,1);
 
 // define('DISALLOW_FILE_EDIT', true);
 
+
+
+
+
+// Inicializamos los widgets de nuestro tema.
+ function iniciar_widgets() {
+
+  register_sidebar(
+   array(
+    'id' => 'widget1',
+    'name' => 'Zona Widget 1',
+    'description' => 'esto es mi sidebar',
+    'before_widget' => '<div>',
+    'after_widget' => '<hr>',
+    'before_title' => '<span>',
+    'after_title' => '</span>',
+   )
+  );
+
+  register_sidebar(
+   array(
+    'id' => 'widget2',
+    'name' => 'Zona Widget 2 que va en el footer',
+    'description' => '',
+    'before_widget' => '<div>',
+    'after_widget' => '<hr>',
+    'before_title' => '<span>',
+    'after_title' => '</span>',
+   )
+  );
+  register_sidebar(
+   array(
+    'id' => 'widget3',
+    'name' => 'Zona Widget para categorías',
+    'description' => '',
+    'before_widget' => '<div>',
+    'after_widget' => '<hr>',
+    'before_title' => '<span>',
+    'after_title' => '</span>',
+   )
+  );
+
+  // register_sidebars(3,
+  //  array(
+  //   'name'=>'Mi id %d',
+  //   'id' => 'miid%d'
+  //  )
+  // );
+
+ }
+ add_action( 'widgets_init', 'iniciar_widgets' );
+
  ?>
