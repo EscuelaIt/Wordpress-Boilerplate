@@ -1,4 +1,4 @@
-<?php 
+<?php
 //
 // Imagen Destacada
 //
@@ -23,8 +23,8 @@ add_image_size( 'home-thumb', 380, 245, true );
 
 //
 // Array que crea los diferentes "huecos" de menús. Usar a discreción
-// Esto nos crea 3 "espacios" para agregar los menús que creemos en el 
-// administrador de Wordpress. 
+// Esto nos crea 3 "espacios" para agregar los menús que creemos en el
+// administrador de Wordpress.
 // USO:
 
 /*
@@ -50,7 +50,7 @@ add_image_size( 'home-thumb', 380, 245, true );
 */
 //
 add_action( 'init', 'register_my_menus' );
- 
+
 function register_my_menus() {
 	register_nav_menus(
 		array(
@@ -140,4 +140,51 @@ add_filter('user_contactmethods','new_contactmethods',10,1);
  }
  add_action( 'widgets_init', 'iniciar_widgets' );
 
- ?>
+function html_comentarios( $comment, $args, $depth ) {
+    ?>
+    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+        <article id="comment-<?php comment_ID(); ?>" class="comment">
+            <footer class="comment-meta">
+                <div class="comment-author vcard">
+                    <?php
+                        $avatar_size = 68;
+
+                        if ( '0' != $comment->comment_parent )
+                            $avatar_size = 39;
+
+                        echo get_avatar( $comment, $avatar_size );
+
+
+                        echo '<br />';
+                        echo get_comment_author_link();
+                        echo '<br />';
+                        echo get_comment_link( $comment->comment_ID );
+                        echo '<br />';
+                        echo get_comment_time( 'c' );
+                        echo '<br />';
+                        echo get_comment_date();
+                        echo '<br />';
+                        echo get_comment_time();
+                        echo '<br />';
+                        echo '<br />';
+
+                    ?>
+
+                    <?php //edit_comment_link( 'Editar', '<span class="edit-link">', '</span>' ); ?>
+                </div><!-- .comment-author .vcard -->
+
+                <?php if ( $comment->comment_approved == '0' ) : ?>
+                    Tu comentario no está todavía aprobado
+                <?php endif; ?>
+
+            </footer>
+
+            <div class="comment-content"><?php comment_text(); ?></div>
+
+            <div class="reply">
+                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => 'Responder', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+            </div><!-- .reply -->
+        </article><!-- #comment-## -->
+
+    <?php
+}

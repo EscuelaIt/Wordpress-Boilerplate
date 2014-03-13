@@ -4,10 +4,11 @@
 		<!-- //Abrimos elemento o contenedor que contiene la información del post -->
 		<article>
 			<header>
-				<h1><?php the_title(); ?></h1>
+				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<small><?php the_author(); ?></small> · <small><?php the_date(); ?></small>
+				<?php comments_popup_link('Ningún Comentario »', '1 Comment »', '% Comments »'); ?>
 			</header>
-		
+
 
 			<?php
 			// Nos muestra las imágenes del post
@@ -22,7 +23,7 @@
 			?>
 			<!-- Imprime un resumen de la entrada -->
 			<?php the_excerpt(); ?>
-			
+
 			<footer>
 				<small><strong>Etiquetas:</strong>	<?php the_tags("-"); ?>	</small>
 				<small><strong>Categorías:</strong> <?php the_category("-"); ?></small>
