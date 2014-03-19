@@ -13,7 +13,7 @@
 
 	<aside>
 	<!-- Obtenemos el Aside o Sidebar -->
-	<?php get_sidebar(); ?> 
+	<?php get_sidebar(); ?>
 	</aside>
 
 	<footer>
@@ -24,4 +24,4 @@
 </body>
 </html>
 
-	
+

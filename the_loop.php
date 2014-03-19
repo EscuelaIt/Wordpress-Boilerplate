@@ -5,6 +5,11 @@
 		<article>
 			<header>
 				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+				<div class="the-date"><?php the_date(); ?></div>
+
+				<div class="my-excerpt"><?php the_excerpt(); ?></div>
+
 				<small><?php the_author(); ?></small> · <small><?php the_date(); ?></small>
 				<?php comments_popup_link('Ningún Comentario »', '1 Comment »', '% Comments »'); ?>
 			</header>
