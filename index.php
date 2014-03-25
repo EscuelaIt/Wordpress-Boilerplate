@@ -4,6 +4,8 @@
 
 <body>
 	<header>
+
+	
 		<?php get_template_part("nav"); ?>
 	</header>
 	<section>
@@ -16,12 +18,11 @@
 	<?php get_sidebar(); ?> 
 	</aside>
 
-	<footer>
 	<!-- Obtenemos el Footer -->
 	<?php get_footer(); ?>
-	</footer>
 
 </body>
+<?php wp_footer(); ?>
 </html>
 
 	

@@ -28,6 +28,7 @@
 				<small><strong>Categorías:</strong> <?php the_category("-"); ?></small>
 			</footer>
 	</article>
+	Aqui va la imagen
 
 <?php endwhile; ?>
 
