@@ -9,9 +9,9 @@
 </header>
 
 <main>
-		
+
 	<?php the_post(); ?>
- 
+
         <article>
  			<header>
  			<!-- Aqui saco el titulo del post -->
@@ -20,13 +20,17 @@
                 <small>
                     Por <?php the_author(', '); ?> el <?php the_time('F jS, Y'); ?> en <?php the_category(', ') ?> | <?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
                 </small>
-         	</header>       
+         	</header>
  			<!-- Aqui el contenido del post -->
 			<div class="single-content">
                 <?php the_content(); ?>
             </div>
 
- 
+
+            <footer class="comments">
+                <?php comments_template(); ?>
+            </footer>
+
         </article>
 
 </main>

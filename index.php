@@ -15,7 +15,7 @@
 
 	<aside>
 	<!-- Obtenemos el Aside o Sidebar -->
-	<?php get_sidebar(); ?> 
+	<?php get_sidebar(); ?>
 	</aside>
 
 	<!-- Obtenemos el Footer -->
@@ -25,4 +25,4 @@
 <?php wp_footer(); ?>
 </html>
 
-	
+
