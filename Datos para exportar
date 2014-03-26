@@ -1,0 +1,12 @@
+1. Exportar base de datos
+2. Cambiar todas las referencias del host anterior por el host nuevo:
+ctrl/cmd + shift + f (o edición, reemplazar)
+
+buscamos: tu/vieja/ruta/absolute
+reemplazamos por: tu/nueva/ruta/absoluta
+
+
+3. Crear la base de datos en el servidor de destino
+4. Importar la base de datos (*.sql) modificada en la base de datos creada en el servidor de destino.
+5. Subir los archivos de tu WordPress local a la carpeta de tu servidor nuevo.  - En caso de estar reviamente en otro servidor, descargar antes y luego subir -.
+6. Modificar con los datos correctos el wp-config.php y subir al servidor.
